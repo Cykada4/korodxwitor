@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body
+    {
+        background-image: url("ksawery.jpg");
+    }
+    @keyframes example {
+        0%   {background-color: red;}
+        25%  {background-color: green;}
+        50%  {background-color: blue;}
+        100% {background-color: red;}
+    }
+    .hindi
+    {
+        background-color: blue;
+        animation-name: example;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+        text-align: center;
+    }
+    .link
+    {
+        color: rgb(65, 198, 243);
+        font-size: 1000%;
+        margin-left: 400px;
+        background-color: transparent;
+        font-display: rgb(65, 198, 243) ;
+    }
+    .desc
+    {
+        color:rgb(0, 0, 0);
+        font-size: 250%;
+        margin-left: 480px;
+        background-color:transparent;
+        font-display: rgb(131, 131, 131);
+    }
+    .kotek
+    {
+        max-width: min-content;
+    }
+    .kontakt
+    {
+        background-color: transparent;
+        font-size: 180%;
+        color: red;
+        margin-left:495px;
+    }
+</style>
+</head>
+<body>
+<h1 class="hindi" style="color: white">JOIN OUR CULT NOW!! CLICK THE LINK BELOW</h1>
+
+<script> <!--Zryjpale page-->
+    function visitPage(){
+        window.location='http://www.zryjpale.pl';
+    }
+</script>
+
+<script>  <!--sideWeb page-->
+    function sideWeb(){
+        window.location='sideweb.html';
+    }
+</script>
+
+<script> <!--kontaktPage-->
+    function kontaktPage(){
+        window.location='kontaktPage.html';
+}
+</script>
+
+<div class="kotek">
+    <button class="link" onclick="visitPage();">LINK</button>
+    <button class="desc" onclick="sideWeb()">Cult desc</button> 
+    <button class="kontakt" onclick="kontaktPage()">CONTACT</button>
+</div>
+
+
+
+
+</body>
+</html>
